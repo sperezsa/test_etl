@@ -9,6 +9,14 @@ from pydantic import ValidationError
 from models.cliente_schema import ClienteSchema
 from models.transaccion_schema import TransaccionSchema
 
+from pathlib import Path
+
+# Localiza la raíz del proyecto desde cualquier script
+BASE_DIR = Path(__file__).resolve().parent.parent if "scripts" in __file__ else Path(__file__).resolve().parent
+
+# Ruta hacia la nueva ubicación
+CONFIG_PATH = BASE_DIR / "config" / "config.yaml"
+
 
 logger = logging.getLogger(__name__)
 
@@ -25,7 +33,7 @@ def procesar_extraccion(db_path):
 
     # 1. Leer configuración
     logger.info(f"--- Leyendo fichero yaml con la info de las tablas a procesar ---")
-    with open("config.yaml", "r") as f:
+    with open(CONFIG_PATH, "r") as f:
         config = yaml.safe_load(f)
 
     for item in config['extract_process']:

@@ -7,6 +7,7 @@
 .env
 .venv/
 node_modules/
+.conf
 
 # --- Python (Basura de ejecución) ---
 __pycache__/
