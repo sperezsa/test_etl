@@ -1,0 +1,6 @@
+﻿id_x;nombre;email;saldo;nivel_riesgo;documento;pais;comentarios;fecha_alta;id_y;cliente_id;monto;tipo;fecha
+1;juan perez;juan@ejemplo.com;1500.5;bajo;05309480E;esp;lo que sea;2025-01-01;1;1;100.0;DEPOSITO;2026-05-04 11:11:23
+1;juan perez;juan@ejemplo.com;1500.5;bajo;05309480E;esp;lo que sea;2025-01-01;2;1;-20.0;RETIRO;2026-05-04 11:12:00
+2;maria garcia;maria@ejemplo.com;45000.0;medio;12342878C;ita;otra cadena de caracteres esdrujula;2023-01-01;3;2;5000.0;TRANSFERENCIA;2026-05-05 10:00:00
+2;maria garcia;maria@ejemplo.com;45000.0;medio;12342878C;ita;otra cadena de caracteres esdrujula;2023-01-01;4;2;-4000.0;RETIRO;2026-05-06 11:00:00
+1;juan perez;juan@ejemplo.com;1500.5;bajo;05309480E;esp;lo que sea;2025-01-01;5;1;-30.0;RETIRO;2026-05-06 12:00:00

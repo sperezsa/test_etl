@@ -1,0 +1,35 @@
+**/__pycache__/
+*.pyc
+.env
+*.log
+
+# --- Seguridad y Entorno ---
+.env
+.venv/
+node_modules/
+
+# --- Python (Basura de ejecución) ---
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+
+# --- Datos (no subir CSVs ni Logs) ---
+*.log
+*.csv
+
+# --- carpetas específicas:
+data/input/*
+data/output/*
+
+# No ignorar el archivo de ejemplo específico, ni los .gitkeep, ni la bd de ejemplo
+!data/output/EJEMPLO_TABLON_COMBINADO.csv
+!.gitkeep
+!data/database/empresa2.db
+
+# --- Específico de UV ---
+# No ignorar uv.lock, para asegurar versiones
+
+
+

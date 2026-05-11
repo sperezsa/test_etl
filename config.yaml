@@ -1,0 +1,10 @@
+extract_process:
+  - table_name: "clientes"
+    schema_type: "cliente" 
+    query: "SELECT * FROM clientes"
+  - table_name: "transacciones"
+    schema_type: "transaccion" 
+    query: "SELECT rowid, * FROM transacciones"
+  - table_name: "cuentas"
+    schema_type: "cuenta" 
+    query: "SELECT * FROM cuentas"
